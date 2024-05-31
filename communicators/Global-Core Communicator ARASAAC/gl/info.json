@@ -1,5 +1,5 @@
 {
-  "standardFor": [
-    "gl"
-  ]
+  "priority": {
+    "gl": 10
+  }
 }

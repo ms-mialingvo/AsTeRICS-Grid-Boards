@@ -14,7 +14,6 @@
     "eu": "Komunikatzaile dinamikoa, ARASAACeko taldeak egina, hiztegi sendoarekin, eta elkarren artean konbinatutako bi komunikazio-aukerekin: nukleo-hiztegia duen komunikatzailea, kategorien arabera banatua, eta core vocabulary motako komunikatzailea – funtsezko hitzakin.",
     "it": "Comunicatore dinamico, sviluppato dal team ARASAAC, con un vocabolario robusto e due opzioni di comunicazione combinate tra loro: comunicatore con vocabolario di base distribuito per categorie e vocabolario di base - comunicatore di parole essenziali."
   },
-  "standardFor": ["en", "es", "ca", "gl", "eu", "it"],
   "wordPrediction": true,
   "tags": ["ARASAAC", "COMMUNICATOR"]
 }

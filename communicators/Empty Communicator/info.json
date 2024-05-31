@@ -3,5 +3,6 @@
   "languages": [],
   "description": "emptyConfigToCreateAnything",
   "tags": [],
-  "translate": true
+  "translate": true,
+  "priority": 100
 }

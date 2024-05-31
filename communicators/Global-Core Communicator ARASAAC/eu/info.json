@@ -1,5 +1,5 @@
 {
-  "standardFor": [
-    "eu"
-  ]
+  "priority": {
+    "eu": 10
+  }
 }
