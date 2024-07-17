@@ -27,7 +27,7 @@ In general most changes require to run `npm run generate` after the changes have
 2. Update the boards as needed within AsTeRICS Grid. Be sure to not change more than needed.
 3. Go to `Manage grids -> more -> Save backup to file`
 4. find the folder containing the configuration in [boards](https://github.com/asterics/AsTeRICS-Grid-Boards/tree/main/boards) or [communicators](https://github.com/asterics/AsTeRICS-Grid-Boards/tree/main/communicators). You can also go to the import page in AsTeRICS Grid, show the details of the configuration and click on "Edit on GitHub" to find the folder.
-5. 5 replace the existing file `.grd.json` in this folder with the `.grd` backup file from step (3). You can rename it to `.grd.json`, but don't have to, it's done automatically.
+5. replace the existing file `.grd.json` in this folder with the `.grd` backup file from step (3). You can rename it to `.grd.json`, but don't have to, it's done automatically.
 6. Commit changes and create a pull request in order to let others confirm your changes.
 
 ### Create a new configuration
