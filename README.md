@@ -84,7 +84,7 @@ The file info.json may contain the following properties in JSON format:
 # Acknowledgements
 This repository was created within the [netidee project funding for AsTeRICS Grid](https://www.netidee.at/asterics-grid), Call 18.
 
-<img src="https://github.com/asterics/AsTeRICS-Grid-Boards/raw/master/netidee-logo.svg" width="250"/>
+<img src="https://raw.githubusercontent.com/asterics/AsTeRICS-Grid-Boards/refs/heads/main/netidee-logo.svg" width="250"/>
 
 
 
