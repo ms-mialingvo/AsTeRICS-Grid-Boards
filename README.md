@@ -81,5 +81,10 @@ The file info.json may contain the following properties in JSON format:
 * `wordPrediction`: optional boolean property to indicate that the configuration contains a keyboard with word prediction. This can be used in order to ask the user if they want to import a dictionary after importing.
 * `tags`: an array of tags, indicating the properties of the configuration (e.g. topic and grid size, example: `["BASIC", "4x5", "MEDICAL"]`)
 
+# Acknowledgements
+This repository was created within the [netidee project funding for AsTeRICS Grid](https://www.netidee.at/asterics-grid), Call 18.
+
+<img src="https://github.com/asterics/AsTeRICS-Grid-Boards/raw/master/netidee-logo.svg" width="250"/>
+
 
 
