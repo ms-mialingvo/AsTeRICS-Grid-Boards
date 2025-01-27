@@ -6,7 +6,7 @@ const BASE_FOLDER_BOARDS = "boards"
 const startPathCommunicators = path.join(__dirname, "..", BASE_FOLDER_COMM);
 const startPathBoards = path.join(__dirname, "..", BASE_FOLDER_BOARDS);
 const INFO_FILENAME = "info.json";
-const OUTPUT_FILENAME = "live_metadata.json";
+const OUTPUT_FILENAME = process.argv[2] && process.argv[2] === "beta" ? "live_metadata_beta.json" : "live_metadata.json";
 const THUMBNAIL_FILENAME = "thumbnail";
 
 let rootFoldersCommunicators = fs.readdirSync(startPathCommunicators, {withFileTypes: true}).filter(e => e.isDirectory());
@@ -49,7 +49,7 @@ async function folderToMetadata(folder, options = {}) {
     folderContents = fs.readdirSync(currentPath, { withFileTypes: true });
     let langCodeFolders = folderContents.filter(e => e.isDirectory() && e.name.length == 2);
     let infoFile = folderContents.find(e => e.name === INFO_FILENAME);
-    let grdFiles = folderContents.filter(e => e.name.endsWith(".grd.json") || e.name.endsWith(".grd"));
+    let grdFiles = folderContents.filter(e => e.name.endsWith(".grd.json") || e.name.endsWith(".grd") || e.name.endsWith(".obz"));
     let imageFiles = folderContents.filter(e => e.name.endsWith(".png") || e.name.endsWith(".jpg") || e.name.endsWith(".jpeg"));
     if (!infoFile && grdFiles.length > 0 && options.needsInfoFile) {
         console.warn(`no info file found for "${folder.name}"!`);
@@ -62,7 +62,7 @@ async function folderToMetadata(folder, options = {}) {
     }
     Object.assign(infoContent, options.defaultProps);
     if (grdFiles.length > 1) {
-        console.warn(`more than 1 .grd file in "${folder.name}"!`);
+        console.warn(`more than 1 .grd / .obz file in "${folder.name}"!`);
         return null;
     }
     if (imageFiles.length > 0) {
