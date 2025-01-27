@@ -80,6 +80,7 @@ The file info.json may contain the following properties in JSON format:
 * `priority`: optional integer value, where a higher value means higher priority and will cause the result be listed first in AsTeRICS Grid.
 * `wordPrediction`: optional boolean property to indicate that the configuration contains a keyboard with word prediction. This can be used in order to ask the user if they want to import a dictionary after importing.
 * `tags`: an array of tags, indicating the properties of the configuration (e.g. topic and grid size, example: `["BASIC", "4x5", "MEDICAL"]`)
+* `generateGlobalGrid`: if `true` a default global grid is generated while importing this configuration
 
 # Acknowledgements
 This repository was created within the [netidee project funding for AsTeRICS Grid](https://www.netidee.at/asterics-grid), Call 18.
