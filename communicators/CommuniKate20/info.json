@@ -7,6 +7,7 @@
   "description": {
     "en": "CommuniKate 20 is a functional communication board with 20 buttons per board created by Kate McCallum for the adult population of communicators that she serves."
   },
+  "tags": ["CommuniKate", "5x4"],
   "wordPrediction": false,
-  "tags": ["CommuniKate", "5x4"]
+  "generateGlobalGrid": true
 }
