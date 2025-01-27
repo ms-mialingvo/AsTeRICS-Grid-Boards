@@ -28,6 +28,7 @@ async function main() {
         });
         metadataObjects = metadataObjects.concat(newObjects);
     }
+    metadataObjects = metadataObjects.filter(o => !!o);
     fs.writeFileSync(path.join(__dirname, "..", OUTPUT_FILENAME), JSON.stringify(metadataObjects));
     console.log(`Successfully written ${metadataObjects.length} elements to ${OUTPUT_FILENAME}!`)
 }
